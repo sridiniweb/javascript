@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div id="form"> 
+            <h1>STUDENTS FORM</h1>
+            <table border="1" id = "table">
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age</label></td>
+                    <td><input type="text"></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <input type="radio" name ="gender" value="Male">Male 
+                        <input type="radio" name ="gender" value="Female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="course">Course</label></td>
+                    <td>
+                        <select name="course" id="course"> 
+                            <option value="js">Javascript</option>
+                            <option value="py">Python</option>
+                            <option value="react">React js</option>
+                            <option value="jqry">Jquery</option>
+                        </select>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td><label for="e-mail">Email</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button onclick="save()" style="width: 100%;">Save</button>
+                    </td>
+                </tr>
+                
+            </table>
+
+            <div id="result">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Course</th>
+                            <th>Email</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button onclick="deleteItem(event)">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>   
+                            <td></td>
+                            <td></td>
+                            <td><button onclick="deleteItem(event)">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div> -->
+
+    <div id="form">
+      <h1>STUDENTS FORM</h1>
+      <div id="table">
+        <ul>
+          <li><label for="name" type="text">Name</label></li>
+          <li><input type="text" /></li>
+        </ul>
+
+        <ul>
+          <li><label for="age" type="text">Age</label></li>
+          <li><input type="text" /></li>
+        </ul>
+
+        <ul>
+          <li><label for="gender" type="text">Gender</label></li>
+          <li>
+            <input type="radio" value="male" />Male
+            <input type="radio" value="female" />Female
+          </li>
+        </ul>
+
+        <ul>
+          <li><label for="course">Course</label></li>
+          <li>
+            <select name="course" id="course">
+              <option value="react">Reactjs</option>
+              <option value="vuejs">vuejs</option>
+              <option value="js">Javascript</option>
+              <option value="java">Java</option>
+              <option value="phython">Python</option>
+            </select>
+          </li>
+        </ul>
+
+        <ul>
+          <li><label for="email">Email</label></li>
+          <li><input type="text" /></li>
+        </ul>
+
+        <ul >
+          <li><button onclick="save()">Save</button></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div id="result">
+      <ul>
+       <li><h3>Name</h3></li>
+       <li><h3>Age</h3></li>
+       <li><h3>Gender</h3></li>
+       <li><h3>Course</h3></li>
+       <li><h3>Email</h3></li>
+       <li><h3>Action</h3></li>
+      </ul>
+
+      <ul id="list">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li><button onclick="deleteItem(event)">Delete</button></li>
+      </ul>
+      <ul id="list_li">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li><button onclick="deleteItem(event)">Delete</button></li>
+      </ul>
+    </div>
+
+    <script>
+        var div = document.getElementById("result")
+        var li = document.getElementById("list")
+        var input = document.getElementsByTagName("input")
+            
+      function save() {
+        var list = document.createElement("li")
+        list.innerHTML = input.value + <button onclick="deleteItem(event)">Delete</button>
+        ul.append(list)
+      }
+
+      function deleteItem(event){
+        event.target.parentElement.remove()
+      }
+        
+    </script>
+  </body>
+</html>
