@@ -209,6 +209,7 @@
 //     console.log("it's a consonant")
 // }
 
+// functions
 var a=10
 b=20
 console.log(a+b)
@@ -218,3 +219,83 @@ function oppo()
     console.log("My phone is oppo")
 }
 oppo()
+
+function myname()
+{
+    console.log("SrilathaDinesh")
+}
+myname()
+
+function samsung()
+{
+    console.log("samsung")
+}
+samsung()
+
+function iphone()
+{
+    console.log("Iphone")
+}
+// iphone()
+
+function redmi()
+{
+    console.log("Redmi")
+}
+// redmi()
+samsung()
+oppo()
+oppo()
+
+var a=20
+var b=30
+
+function add()
+{
+    console.log(a+b)
+}
+add()
+
+var factor="Dinesh"
+var fplayer="Dinesh"
+var fmovie="Marriage"
+
+function favourite()
+{
+    console.log("Favourite Actor:"+factor)
+    console.log("Favourite Player:"+fplayer)
+    console.log("Favourite Movie:"+fmovie)
+}
+favourite()
+
+// parameters: refers to variables or place holders
+
+function add(a,b)
+{
+    console.log(a+b)
+}
+add(4,6)
+
+function area(l,b)
+{
+    var a=l*b
+    console.log("Area is :",a)
+}
+area(10,12)
+
+// return type
+
+function name()
+{
+    return "Srishti"
+}
+var  a=name()
+console.log(a)
+
+function addition(aa,bb)
+{
+    return (aa+bb)
+}
+var total=addition(12,18)
+console.log(total)
+
